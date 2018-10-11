@@ -1,0 +1,2 @@
+The ABN lookup PHP sample code uses a library called NuSOAP (Web Services Toolkit for PHP).  It is "free software which you can downlaod from http://dietrich.ganx4.com/nusoap. The sample code uses v0.6.5. When youhave downloaded (and unziped) the NuSOAP distribution, copy the whole lib directory (ie the directory not the files from the lib directory) from the distribution into the same directory as the abnsample.php.
+

@@ -1,0 +1,301 @@
+table.bodyContainer, table.dataContainer /* deprecated in favour of bodyContainer */, table.dataList, table.dataEdit, table.dataGroup, table.header, table.message, table.summary, table.buttonGroup, table.searchCriteria, table.navigationWizard {
+	width: 100%;
+	background-color: #c5d8d8;
+	font-size: 11px;
+	font-family: Tahoma, Verdana, helvetica, sans-serif;
+}
+table.navigationWizard {
+	margin-bottom: 3px;
+	background-color: #98BCBC;
+}
+table.bodyContainer {
+	margin: 0;
+	padding: 0;
+}
+table.dataEdit, table.dataList, table.header, table.message, table.searchCriteria {
+	margin-bottom: 3px;
+}
+table.dataGroup, table.itemGroup, table.message, table.navigationWizard {
+	border: 1px solid #669999;
+}
+/* The following tables have similar emphasized 
+    captions with DIVs inside (dataGroup is special case)*/table.dataList, table.dataEdit, table.header, table.searchCriteria, table.summary {
+	border: 2px solid #5C8A89;
+	border-collapse: collapse;
+}
+table.dataList caption, table.dataEdit caption, table.dataGroup caption, table.header caption, table.message caption, table.summary caption, table.itemGroup caption, table.searchCriteria caption {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	padding-left: 5px;
+}
+table.dataList caption div, table.dataEdit caption div, table.dataGroup caption div, table.header caption div, table.message caption div, table.summary caption div, table.itemGroup caption div, table.searchCriteria caption div {
+	background-color: #5C8A89;
+	color: #E1EBEB;
+	font-weight: bold;
+	font-size: 11px;
+	text-align: left;
+	padding: 0px 4px;
+	width: 200px;
+	border: 2px solid #5C8A89;
+}
+table.helpMessage {
+	width: 100%;
+	background-color: #FFFFE1;
+	border: 2px solid #5C8A89;
+	font-size: 11px;
+	font-family: Tahoma, Verdana, helvetica, sans-serif;
+}
+table.helpMessage td {
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+table.itemGroup {
+	margin: 0;
+	padding: 0;
+	font-size: 11px;
+	width: 100%;
+	font-family: Tahoma, Verdana, helvetica, sans-serif;
+	border: 1px solid #98BCBC;
+}
+table.itemGroup td {
+	border: none;
+}
+table.itemGroup caption {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+table.itemGroup caption div {
+	background-color: #98BCBC;
+	color: white;
+	font-weight: bold;
+	font-size: 11px;
+	text-align: left;
+	padding: 0px 4px;
+	width: auto;
+	border: 2px solid #98BCBC;
+}
+table.buttonGroup {
+	width: 100%;
+}
+table.buttonGroup td {
+	text-align: right;
+}
+table.dataList th {
+	border-top: none;
+	border-bottom: 1px solid #c5d8d8;
+	border-left: 1px solid #c5d8d8;
+	border-right: 1px solid #c5d8d8;
+	padding-left: 3px;
+	padding-right: 3px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: left;
+	background-color: #98BCBC;
+}
+table.dataList td {
+	border: 1px solid #669999;
+	padding-left: 3px;
+	padding-right: 3px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+table.dataList tr.lowlight td {
+	background-color: #CCCCCC;
+}
+table.dataList tr.highlight td {
+	background-color: white;
+}
+table.dataEdit th, table.dataEdit td, table.header th, table.header td, table.searchCriteria th, table.searchCriteria td, table.summary th, table.summary td {
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: left;
+	font-weight: normal;
+}
+table.container td.container, th.container {
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-collapse: collapse;
+	font-size: 11px;
+	font-family: Tahoma, Verdana, helvetica, sans-serif;
+}
+table.container td, table.container th {
+	font-size: 11px;
+	font-family: Tahoma, Verdana, helvetica, sans-serif;
+}
+table.navigationWizard td {
+	text-align: center;
+}
+table.navigationWizard input, table.navigationWizard input, table.navigationWizard input {
+	width: 60px;
+}
+
+/* 
+    Special column definitions */th.date td.date {
+}
+th.number, td.number, th.currency, td.currency {
+	text-align: right;
+}
+/* Links */a.appLink {
+	/*font-weight:normal;*/ /*font-style:normal;*/
+	font-size: 11px;
+	font-family: Tahoma, Verdana, helvetica, sans-serif;
+	text-decoration: underline;
+	color: black;
+}
+a.appLink:hover {
+	/*font-weight:normal;*/ /*font-style:normal;*/
+	font-size: 11px;
+	font-family: Tahoma, Verdana, helvetica, sans-serif;
+	text-decoration: underline;
+	color: #384C4C;
+}
+a.tooltipLink {
+	/*font-weight:normal;*/ /*font-style:normal;*/
+	font-size: 11px;
+	font-family: Tahoma, Verdana, helvetica, sans-serif;
+	text-decoration: none;
+	color: black;
+}
+a.tooltipLink:hover {
+	/*font-weight:normal;*/ /*font-style:normal;*/
+	font-size: 11px;
+	font-family: Tahoma, Verdana, helvetica, sans-serif;
+	text-decoration: none;
+	color: #384C4C;
+}
+/* Validation errors at the top of every screen */table.error {
+	font-family: Tahoma, Verdana, helvetica, sans-serif;
+	border: 1px solid maroon;
+	width: 100%;
+	background-color: white;
+	margin-bottom: 3px;
+	border-collapse: collapse;
+}
+table.error caption {
+	font-size: 14px;
+	font-weight: bold;
+	color: maroon;
+	width: 100%;
+	background-color: white;
+	text-align: left;
+	border: 1px solid maroon;
+	padding: 3px 5px;
+}
+table.error td {
+	padding-top: 1px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+	padding-right: 1px;
+	font-size: 11px;
+	font-family: Tahoma, Verdana, helvetica, sans-serif;
+	font-style: italic;
+	color: #444444;
+}
+ul.error {
+	font-size: 11px;
+	font-family: Tahoma, Verdana, helvetica, sans-serif;
+	font-style: normal;
+	color: black;
+	padding: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+ul.error li {
+	list-style-image: url(../images/errorBullet.gif);
+	list-style-position: outside;
+	vertical-align: bottom;
+	padding: 2px 0px;
+	margin: 2px 0px;
+}
+ul.error em {
+	font-weight: bold;
+	font-style: normal;
+}
+ul.error span.code {
+	font-size: 8px;
+	color: #000000;
+	background-color: #FFFFFF;
+}
+ul.error p.code {
+	font-size: 9px;
+	color: #DDDDDD;
+	background-color: #777777;
+	text-align: right;
+	margin: 0px;
+	padding-left: 20px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding: right:1px;
+}
+div.message {
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: center;
+	background-color: #98BCBC;
+	font-weight: bold;
+	width: 100%;
+}
+input, textarea, select {
+	font-size: 11px;
+	font-family: Tahoma, Verdana, helvetica, sans-serif;
+}
+input.button {
+	font-size: 11px;
+	font-family: Tahoma, Verdana, helvetica, sans-serif;
+	width: 90px;
+}
+/* Add readonly versions of 
+    the numeric fields */input.currency, input.number, input.readonly-currency, input.readonly-number {
+	font-size: 11px;
+	font-family: Tahoma, Verdana, helvetica, sans-serif;
+	text-align: right;
+}
+
+span.mandatoryFieldIndicator {
+	color: #990000;
+}
+/* Deprecated 
+    classes from the old revNet.css */TABLE.border, table.data_border {
+	width: 100%;
+	background-color: #c5d8d8;
+	border: 1px solid #669999;
+}
+TABLE.noborder {
+	width: 100%;
+	background-color: #c5d8d8;
+	border: none;
+}
+span.freetext, span.currency, span.date, span.number {
+	background-color: #c5d8d8;
+	border: 1px inset;
+	display: block;
+	height: 16px;
+	overflow: hidden;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	vertical-align: middle;
+}
+span.freetext, span.currency {
+	text-align: left;
+}
+span.currency, span.number {
+	text-align: right;
+}
+
+.pageTitle {
+	background-color: #c5d8d8;
+	font-size: 12px;
+	font-weight:bold;
+	font-family: Tahoma, Verdana, helvetica, sans-serif;
+}
