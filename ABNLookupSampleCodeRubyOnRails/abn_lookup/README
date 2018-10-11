@@ -1,0 +1,13 @@
+Very basic example of using ABN Lookup Service with Ruby on Rails.  The purpose is to show how to integrate the service using the SOAP4R gem.
+
+Requirements:
+
+SOAP4R GEM
+'gem install soap4r --include-dependencies'
+
+Navigate to localhost:3000/abn_lookup/
+
+NOTE:
+- There is no error checking.  If a ABN number doesn't have an associated trading name then a nil object will be acted on, thus producing a no method error.  You should integrate this checking into the model or controller, depending upon its use in the application.
+
+Any questions to: design@whagoo.com

@@ -1,0 +1,27 @@
+<strong>AuthenticationGUID:</strong><br/>
+<%= @result['ABRPayloadSearchResults']['request']['identifierSearchRequest']['authenticationGUID'] %>
+<br/>
+<strong>ABN:</strong><br/>
+<%= @result['ABRPayloadSearchResults']['response']['businessEntity']['ABN']['identifierValue'] %>
+<br/>
+<strong>ABN Status:</strong><br/>
+<%= @result['ABRPayloadSearchResults']['response']['businessEntity']['entityStatus']['entityStatusCode'] %>
+<br/>
+<strong>ASIC Number:</strong><br/>
+<%= @result['ABRPayloadSearchResults']['response']['businessEntity']['ASICNumber'] %>
+<br/>
+<strong>Entity Name:</strong><br/>
+<%= @result['ABRPayloadSearchResults']['response']['businessEntity']['mainName']['organisationName'] %>
+<br/>
+<strong>Trading Name:</strong><br/>
+<%= @result['ABRPayloadSearchResults']['response']['businessEntity']['mainTradingName']['organisationName'] %>
+<br/>
+<strong>Organisation Type:</strong><br/>
+<%= @result['ABRPayloadSearchResults']['response']['businessEntity']['entityType']['entityDescription'] %>
+<br/>
+<strong>State:</strong><br/>
+<%= @result['ABRPayloadSearchResults']['response']['businessEntity']['mainBusinessPhysicalAddress']['stateCode'] %>
+<br/>
+<strong>Postcode:</strong></br>
+<%= @result['ABRPayloadSearchResults']['response']['businessEntity']['mainBusinessPhysicalAddress']['postcode'] %>
+

@@ -1,0 +1,10 @@
+<% form_for :lookup, :url => {:action => :lookup} do |form| %>
+<label for="abn">ABN:</label><br/>
+<%= form.text_field :abn, :size => 15 %>
+<br/>
+<label for="guid"> Guid:</label><br/>
+<%= form.text_field :guid, :size => 15 %>
+<br/>
+<br/>
+<%= submit_tag "Lookup"%>
+<% end %>
