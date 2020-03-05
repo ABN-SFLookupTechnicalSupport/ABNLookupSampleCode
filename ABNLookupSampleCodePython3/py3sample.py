@@ -21,13 +21,13 @@ authenticationGuid = ''		#Your GUID should go here
 
 #Constructs the URL by inserting the search parameters specified above
 #GETs the url (using urllib.request.urlopen)
-conn = req.urlopen('http://abr.business.gov.au/abrxmlsearchRPC/AbrXmlSearch.asmx/' + 
+conn = req.urlopen('https://abr.business.gov.au/abrxmlsearchRPC/AbrXmlSearch.asmx/' + 
 					'ABRSearchByNameSimpleProtocol?name=' + name + 
 					'&postcode=' + postcode + '&legalName=' + legalName + 
 					'&tradingName=' + tradingName + '&NSW=' + NSW + 
 					'&SA=' + SA + '&ACT=' + ACT + '&VIC=' +  VIC + 
 					'&WA=' + WA + '&NT=' + NT + '&QLD=' + QLD + 
-					'&TAS=' + TAS + '&authenticationGuid=' + authenticationGuid)
+					'&TAS=' + TAS + '&authenticationGuid=' + "ca893c12-b6d8-4e58-82cc-97261f1b02cb")
 					
 #XML is returned by the webservice
 #Put returned xml into variable 'returnedXML' 

@@ -75,32 +75,32 @@ public class AbnSearchWSSOAP
 		SOAPBody body = envelope.getBody();
 
 		// Create the default namespace for the SOAP body
-		body.addNamespaceDeclaration("", "http://abr.business.gov.au/ABRXMLSearch/");
+		body.addNamespaceDeclaration("", "https://abr.business.gov.au/ABRXMLSearch/");
 
 		// Add the service information
-		Name svcInfo = envelope.createName("ABRSearchByABN", "", "http://abr.business.gov.au/ABRXMLSearch/");
+		Name svcInfo = envelope.createName("ABRSearchByABN", "", "https://abr.business.gov.au/ABRXMLSearch/");
 		SOAPElement svcElem = body.addChildElement(svcInfo);
 
 		SOAPElement node;
 
-		node = svcElem.addChildElement("searchString", "", "http://abr.business.gov.au/ABRXMLSearch/");
+		node = svcElem.addChildElement("searchString", "", "https://abr.business.gov.au/ABRXMLSearch/");
 		node.addTextNode(abn);
 
-		node = svcElem.addChildElement("includeHistoricalDetails", "", "http://abr.business.gov.au/ABRXMLSearch/");
+		node = svcElem.addChildElement("includeHistoricalDetails", "", "https://abr.business.gov.au/ABRXMLSearch/");
 		node.addTextNode(encodeBooleanParam(includeHistorical));
 
-		node = svcElem.addChildElement("authenticationGuid", "", "http://abr.business.gov.au/ABRXMLSearch/");
+		node = svcElem.addChildElement("authenticationGuid", "", "https://abr.business.gov.au/ABRXMLSearch/");
 		node.addTextNode(guid);
 
 		// Add the SOAPAction value as a MIME header
 		MimeHeaders mimeHeaders = msg.getMimeHeaders();
-		mimeHeaders.setHeader("SOAPAction", "http://abr.business.gov.au/ABRXMLSearch/ABRSearchByABN");
+		mimeHeaders.setHeader("SOAPAction", "https://abr.business.gov.au/ABRXMLSearch/ABRSearchByABN");
 
 		// Save changes to the message we just populated
 		msg.saveChanges();
 
 		// Get ready for the invocation
-		URL endpoint = new URL("http://abr.business.gov.au/abrxmlsearch/ABRXMLSearch.asmx");
+		URL endpoint = new URL("https://abr.business.gov.au/abrxmlsearch/ABRXMLSearch.asmx");
 
 		// Make the call
 		SOAPMessage response = connection.call(msg, endpoint);
