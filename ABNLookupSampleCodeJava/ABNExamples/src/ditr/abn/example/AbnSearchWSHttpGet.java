@@ -163,7 +163,7 @@ public class AbnSearchWSHttpGet
 	{
 		AbnSearchResult result = null;
 
-		URL url = new URL("http://abr.business.gov.au/abrxmlsearch/ABRXMLSearch.asmx/" + service + "?authenticationGuid=" + URLEncoder.encode(guid, UTF_8) + parameters);
+		URL url = new URL("https://abr.business.gov.au/abrxmlsearch/ABRXMLSearch.asmx/" + service + "?authenticationGuid=" + URLEncoder.encode(guid, UTF_8) + parameters);
 
 		HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 

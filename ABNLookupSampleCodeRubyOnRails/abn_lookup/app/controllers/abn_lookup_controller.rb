@@ -3,7 +3,7 @@ class AbnLookupController < ApplicationController
   
   def lookup
     # Define the WSDL path
-    wsdl = "http://www.abn.business.gov.au/abrxmlsearch/ABRXMLSearch.asmx?WSDL"
+    wsdl = "https://www.abn.business.gov.au/abrxmlsearch/ABRXMLSearch.asmx?WSDL"
     
     # All the methods avaliable are parsed and define based on the WSDL path
     soap_client = SOAP::WSDLDriverFactory.new(wsdl).create_rpc_driver
