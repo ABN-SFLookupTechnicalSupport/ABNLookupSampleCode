@@ -27,7 +27,7 @@ conn = req.urlopen('https://abr.business.gov.au/abrxmlsearchRPC/AbrXmlSearch.asm
 					'&tradingName=' + tradingName + '&NSW=' + NSW + 
 					'&SA=' + SA + '&ACT=' + ACT + '&VIC=' +  VIC + 
 					'&WA=' + WA + '&NT=' + NT + '&QLD=' + QLD + 
-					'&TAS=' + TAS + '&authenticationGuid=' + "ca893c12-b6d8-4e58-82cc-97261f1b02cb")
+					'&TAS=' + TAS + '&authenticationGuid=' + "myGUID")
 					
 #XML is returned by the webservice
 #Put returned xml into variable 'returnedXML' 

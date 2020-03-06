@@ -75,7 +75,7 @@ public class AbnSearchWSSOAP
 		SOAPBody body = envelope.getBody();
 
 		// Create the default namespace for the SOAP body
-		body.addNamespaceDeclaration("", "https://abr.business.gov.au/ABRXMLSearch/");
+		body.addNamespaceDeclaration("", "http://abr.business.gov.au/ABRXMLSearch/");
 
 		// Add the service information
 		Name svcInfo = envelope.createName("ABRSearchByABN", "", "https://abr.business.gov.au/ABRXMLSearch/");
@@ -94,7 +94,7 @@ public class AbnSearchWSSOAP
 
 		// Add the SOAPAction value as a MIME header
 		MimeHeaders mimeHeaders = msg.getMimeHeaders();
-		mimeHeaders.setHeader("SOAPAction", "https://abr.business.gov.au/ABRXMLSearch/ABRSearchByABN");
+		mimeHeaders.setHeader("SOAPAction", "http://abr.business.gov.au/ABRXMLSearch/ABRSearchByABN");
 
 		// Save changes to the message we just populated
 		msg.saveChanges();

@@ -12,7 +12,7 @@ namespace AbnLookup.SearchClientCSharpe {
       //  Return query string for a search by ABN 
       // -----------------------------------------------------------------------------------------------
       protected override string BuildAbnQueryString(string searchText, string history, string guid) {
-         StringBuilder QueryString = new StringBuilder("http://abr.business.gov.au/abrxmlsearchRPC/ABRXMLSearch.asmx/ABRSearchByABN?");
+         StringBuilder QueryString = new StringBuilder("https://abr.business.gov.au/abrxmlsearchRPC/ABRXMLSearch.asmx/ABRSearchByABN?");
          QueryString.Append("searchString=" + searchText);
          QueryString.Append("&includeHistoricalDetails=" + history);
          QueryString.Append("&authenticationGuid=" + guid);
@@ -22,7 +22,7 @@ namespace AbnLookup.SearchClientCSharpe {
       //  Return query string for a search by Acn 
       // -----------------------------------------------------------------------------------------------
       protected override string BuildAsicQueryString(string searchText, string history, string guid) {
-         StringBuilder QueryString = new StringBuilder("http://abr.business.gov.au/abrxmlsearchRPC/ABRXMLSearch.asmx/ABRSearchByASIC?");
+         StringBuilder QueryString = new StringBuilder("https://abr.business.gov.au/abrxmlsearchRPC/ABRXMLSearch.asmx/ABRSearchByASIC?");
          QueryString.Append("searchString=" + searchText);
          QueryString.Append("&includeHistoricalDetails=" + history);
          QueryString.Append("&authenticationGuid=" + guid);
@@ -33,7 +33,7 @@ namespace AbnLookup.SearchClientCSharpe {
       //  Return query string for a search by Name
       // -----------------------------------------------------------------------------------------------
       protected override string BuildNameQueryString(string searchText, string act, string nsw, string nt, string qld, string tas, string vic, string wa, string sa, string postcode, string legalName, string tradingName, string guid) {
-         StringBuilder QueryString = new StringBuilder("http://abr.business.gov.au/abrxmlsearchRPC/ABRXMLSearch.asmx/ABRSearchByNameSimpleProtocol?");
+         StringBuilder QueryString = new StringBuilder("https://abr.business.gov.au/abrxmlsearchRPC/ABRXMLSearch.asmx/ABRSearchByNameSimpleProtocol?");
          QueryString.Append("authenticationGuid=" + System.Web.HttpUtility.UrlEncode(guid));
          QueryString.Append("&Name=" + System.Web.HttpUtility.UrlEncode(searchText));
          QueryString.Append("&ACT=" + act);
@@ -53,7 +53,7 @@ namespace AbnLookup.SearchClientCSharpe {
       //  Return query string for a search by Acn 
       // -----------------------------------------------------------------------------------------------
       protected override string BuildPostcodeQueryString(string postcode, string guid) {
-         StringBuilder QueryString = new StringBuilder("http://abr.business.gov.au/abrxmlsearchRPC/ABRXMLSearch.asmx/SearchByPostcode?");
+         StringBuilder QueryString = new StringBuilder("https://abr.business.gov.au/abrxmlsearchRPC/ABRXMLSearch.asmx/SearchByPostcode?");
          QueryString.Append("postcode=" + postcode);
          QueryString.Append("&authenticationGuid=" + guid);
          return QueryString.ToString();
