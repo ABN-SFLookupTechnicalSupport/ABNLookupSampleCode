@@ -98,11 +98,15 @@ namespace AbnLookup.SearchClientCSharpe {
                ServiceReferenceAbnLookup.SearchResultsRecord Name = Names.searchResultsRecord[NameIndex];
                MatchingName = MatchingNames.NewRow();
                MatchingName["ABN"] = Name.ABN[0].identifierValue;
-               ServiceReferenceAbnLookup.OrganisationSimpleName SimpleName = (ServiceReferenceAbnLookup.OrganisationSimpleName)Name.Items[0];
-               MatchingName["Entity Name"] = SimpleName.organisationName;
-               MatchingName["Score"] = SimpleName.score;
-               MatchingName["State"] = Name.mainBusinessPhysicalAddress[0].stateCode;
-               MatchingName["Postcode"] = Name.mainBusinessPhysicalAddress[0].postcode;
+               if (Name.Items != null) {
+                  ServiceReferenceAbnLookup.OrganisationSimpleName SimpleName = (ServiceReferenceAbnLookup.OrganisationSimpleName)Name.Items[0];
+                  MatchingName["Entity Name"] = SimpleName.organisationName;
+                  MatchingName["Score"] = SimpleName.score;
+               }
+               if (Name.mainBusinessPhysicalAddress != null) {
+                  MatchingName["State"] = Name.mainBusinessPhysicalAddress[0].stateCode;
+                  MatchingName["Postcode"] = Name.mainBusinessPhysicalAddress[0].postcode;
+               }
                MatchingNames.Rows.Add(MatchingName);
                NameIndex++;
             }
