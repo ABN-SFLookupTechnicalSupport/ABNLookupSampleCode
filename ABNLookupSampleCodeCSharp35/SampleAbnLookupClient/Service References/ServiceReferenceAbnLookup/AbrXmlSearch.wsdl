@@ -1709,15 +1709,15 @@
     </wsdl:operation>
   </wsdl:binding>
   <wsdl:service name="ABRXMLSearch">
-    <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">ABNLookup web based search services</documentation>
+    <documentation xmlns="https://schemas.xmlsoap.org/wsdl/">ABNLookup web based search services</documentation>
     <wsdl:port name="ABRXMLSearchSoap" binding="tns:ABRXMLSearchSoap">
-      <soap:address location="http://abr.business.gov.au/AbrXmlSearch/AbrXmlSearch.asmx" />
+      <soap:address location="https://abr.business.gov.au/AbrXmlSearch/AbrXmlSearch.asmx" />
     </wsdl:port>
     <wsdl:port name="ABRXMLSearchHttpGet" binding="tns:ABRXMLSearchHttpGet">
-      <http:address location="http://abr.business.gov.au/AbrXmlSearch/AbrXmlSearch.asmx" />
+      <http:address location="https://abr.business.gov.au/AbrXmlSearch/AbrXmlSearch.asmx" />
     </wsdl:port>
     <wsdl:port name="ABRXMLSearchHttpPost" binding="tns:ABRXMLSearchHttpPost">
-      <http:address location="http://abr.business.gov.au/AbrXmlSearch/AbrXmlSearch.asmx" />
+      <http:address location="https://abr.business.gov.au/AbrXmlSearch/AbrXmlSearch.asmx" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

@@ -100,7 +100,7 @@ public class AbnSearchWSSOAP
 		msg.saveChanges();
 
 		// Get ready for the invocation
-		URL endpoint = new URL("http://abr.business.gov.au/abrxmlsearch/ABRXMLSearch.asmx");
+		URL endpoint = new URL("https://abr.business.gov.au/abrxmlsearch/ABRXMLSearch.asmx");
 
 		// Make the call
 		SOAPMessage response = connection.call(msg, endpoint);

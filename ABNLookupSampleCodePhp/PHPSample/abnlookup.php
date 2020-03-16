@@ -23,7 +23,7 @@ if(isset($_POST['ButtonABNLookup']))
 	$proxyusername = '';
 	$proxypassword = '';
 	
-	$client = new soapclient('http://abr.business.gov.au/abrxmlsearch/ABRXMLSearch.asmx?WSDL', true,
+	$client = new soapclient('https://abr.business.gov.au/abrxmlsearch/ABRXMLSearch.asmx?WSDL', true,
 							$proxyhost, $proxyport, $proxyusername, $proxypassword);
 	$err = $client->getError();
 	if ($err) 

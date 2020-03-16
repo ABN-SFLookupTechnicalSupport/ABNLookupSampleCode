@@ -17,10 +17,10 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://abr.business.gov.au/AbrXmlSearchRpc/AbrXmlSearch.asmx?wsdl" Protocol="http" SourceId="1" />
+    <MetadataSource Address="https://abr.business.gov.au/AbrXmlSearchRpc/AbrXmlSearch.asmx?wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="AbrXmlSearch.wsdl" MetadataType="Wsdl" ID="3f2407eb-88e2-4176-9cb3-0e82f8a42ea9" SourceId="1" SourceUrl="http://abr.business.gov.au/AbrXmlSearchRpc/AbrXmlSearch.asmx?wsdl" />
+    <MetadataFile FileName="AbrXmlSearch.wsdl" MetadataType="Wsdl" ID="3f2407eb-88e2-4176-9cb3-0e82f8a42ea9" SourceId="1" SourceUrl="https://abr.business.gov.au/AbrXmlSearchRpc/AbrXmlSearch.asmx?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />

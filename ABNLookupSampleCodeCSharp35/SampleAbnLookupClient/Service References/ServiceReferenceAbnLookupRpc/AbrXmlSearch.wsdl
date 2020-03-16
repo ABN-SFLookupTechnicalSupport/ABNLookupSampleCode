@@ -1993,15 +1993,15 @@
     </wsdl:operation>
   </wsdl:binding>
   <wsdl:service name="ABRXMLSearchRPC">
-    <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">ABRpublic web based search services</documentation>
+    <documentation xmlns="https://schemas.xmlsoap.org/wsdl/">ABRpublic web based search services</documentation>
     <wsdl:port name="ABRXMLSearchRPCSoap" binding="tns:ABRXMLSearchRPCSoap">
-      <soap:address location="http://abr.business.gov.au/AbrXmlSearchRpc/AbrXmlSearch.asmx" />
+      <soap:address location="https://abr.business.gov.au/AbrXmlSearchRpc/AbrXmlSearch.asmx" />
     </wsdl:port>
     <wsdl:port name="ABRXMLSearchRPCHttpGet" binding="tns:ABRXMLSearchRPCHttpGet">
-      <http:address location="http://abr.business.gov.au/AbrXmlSearchRpc/AbrXmlSearch.asmx" />
+      <http:address location="https://abr.business.gov.au/AbrXmlSearchRpc/AbrXmlSearch.asmx" />
     </wsdl:port>
     <wsdl:port name="ABRXMLSearchRPCHttpPost" binding="tns:ABRXMLSearchRPCHttpPost">
-      <http:address location="http://abr.business.gov.au/AbrXmlSearchRpc/AbrXmlSearch.asmx" />
+      <http:address location="https://abr.business.gov.au/AbrXmlSearchRpc/AbrXmlSearch.asmx" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

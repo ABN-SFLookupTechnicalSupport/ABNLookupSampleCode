@@ -27,7 +27,7 @@ class abnlookup extends SoapClient{
 			'cache_wsdl' => WSDL_CACHE_NONE
 		); 
 
-		parent::__construct('http://abr.business.gov.au/abrxmlsearch/ABRXMLSearch.asmx?WSDL', $params);
+		parent::__construct('https://abr.business.gov.au/abrxmlsearch/ABRXMLSearch.asmx?WSDL', $params);
     }
 	
 	public function searchByAbn($abn, $historical = 'N'){
