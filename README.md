@@ -1,5 +1,5 @@
 # ABNLookupSampleCode
-Sample code is available for download.  The sample code covers different languages and platforms, including Visual Basic, C#, Java, php, Python, Microsoft Access and Excel. You are actively encouraged to expand and enhance the offerings available here.  
+Sample code is available for download.  The sample code covers different languages and platforms, including Visual Basic, C#, Java, php, Python, Microsoft Access, R and Excel. You are actively encouraged to expand and enhance the offerings available here.  
 
 To run the sample code, you need a Globally Unique Identifier (GUID) which we will provide when you register for access to the ABN Lookup [web services](https://abr.business.gov.au/Tools/WebServices). 
 
